@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
+    <base href=".">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JS</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <base href=".">
     <a href="" name="anchor_nav" class="anchor-top"></a>
     <nav>
         <div class="dropdown">
-            <img src="/html.png" alt="" class="logo">
+            <img src="html.png" alt="" class="logo">
             <div class="dropdown-content">
                 <img src="/IMG_20210705_171251_375.jpg" alt="">
                 Створив та не буде підтримувати сайт студент ЧНУ ФМІ Кіящено Михайло, 207 група
@@ -40,7 +42,11 @@
                 </div>
 
                 <div class="btn-lab">
-                    <button id="button_school">Start</button>
+                    <button id="button_school" onclick="add()">+</button>
+                    <button id="button_school" onclick="substract()">-</button>
+                    <button id="button_school" onclick="multiply()">*</button>
+                    <button id="button_school" onclick="divide()">:</button>
+
                     <label id="label_school_output">Result</label>
                 </div>
             </div>
@@ -82,7 +88,7 @@
             </div>
         </section>
     </div>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

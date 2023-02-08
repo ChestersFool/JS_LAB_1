@@ -66,7 +66,7 @@ function spellingHryvnia()
     out.innerHTML = result;
 }
 
-btnSchool.addEventListener("click", commonDenominator);
+// btnSchool.addEventListener("click", commonDenominator);
 
 
 function firstLetterToCapital ()
@@ -87,5 +87,58 @@ function firstLetterToCapital ()
     let out = document.querySelector("#label_editor_output");
     out.innerHTML = result;
 }
+
+function add(){
+    let a = document.querySelector("#input_school_a");
+    let b = document.querySelector("#input_school_b");
+
+    let result;
+    let aNum = Number(a.value);
+    let bNum = Number(b.value);
+
+    result = aNum + bNum;
+    let out = document.querySelector("#label_school_output");
+    out.innerHTML = result;
+}
+
+function substract(){
+    let a = document.querySelector("#input_school_a");
+    let b = document.querySelector("#input_school_b");
+
+    let result;
+    let aNum = Number(a.value);
+    let bNum = Number(b.value);
+
+    result = aNum - bNum;
+    let out = document.querySelector("#label_school_output");
+    out.innerHTML = result;
+}
+
+function multiply(){
+    let a = document.querySelector("#input_school_a");
+    let b = document.querySelector("#input_school_b");
+
+    let result;
+    let aNum = Number(a.value);
+    let bNum = Number(b.value);
+
+    result = aNum * bNum;
+    let out = document.querySelector("#label_school_output");
+    out.innerHTML = result;
+}
+
+function divide(){
+    let a = document.querySelector("#input_school_a");
+    let b = document.querySelector("#input_school_b");
+
+    let result;
+    let aNum = Number(a.value);
+    let bNum = Number(b.value);
+
+    result = aNum / bNum;
+    let out = document.querySelector("#label_school_output");
+    out.innerHTML = result;
+}
+
 
 btnEditor.addEventListener("click", firstLetterToCapital);
